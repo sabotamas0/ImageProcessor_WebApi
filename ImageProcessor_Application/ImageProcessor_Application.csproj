@@ -18,5 +18,8 @@
   <PropertyGroup>
     <UseIJWHost Condition="'$(TargetFramework)' == 'net6.0'">true</UseIJWHost>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
 
 </Project>
