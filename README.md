@@ -18,8 +18,32 @@ Note: Due of the nature of the C++/Cli module, this solution only works in windo
 
 The project supports both release, and Debug mode out of the box on platform x64, loads the neccessary OpenCv dll-s, according to current configuration. These dll-s, and lib-s come from nuget package manager, and included throughout the project.
 
-### Debug Mode
+### Modes
 
 On Debug mode, according to the configuration condition:
+
 ![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/DebugConditional.PNG "Debug Condition")
+
+The following dll-s will be transferred for use, alongside of the project various dll-s.
+
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/TransferredDlls.PNG "Transferred Dlls")
+
+These apply to the Release mode aswell.
+
+### Starting the application
+
+Upon clicking the Start button:
+
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/StartApp.PNG "Start App")
+
+We get the following Swagger User Interface:
+
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/swaggerUi.PNG "Swagger")
+
+Here we can use the process_image endpoint, by uploading a file. This file will be processed, as described in the Project Architecture section.
+
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/UploadPhoto.PNG "Upload Photo")
+
+
+### Behaviours
 
