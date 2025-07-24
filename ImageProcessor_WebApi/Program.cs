@@ -1,4 +1,6 @@
 
+using ImageProcessor_Application;
+
 namespace ImageProcessor_WebApi
 {
     public class Program
@@ -13,6 +15,7 @@ namespace ImageProcessor_WebApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddServices();
 
             var app = builder.Build();
 
@@ -23,7 +26,7 @@ namespace ImageProcessor_WebApi
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            
 
             app.UseAuthorization();
 
