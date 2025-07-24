@@ -23,12 +23,12 @@
     <ProjectReference Include="..\ImageProcessor_Application\ImageProcessor_Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='Debug'">
     <None Include="..\packages\opencv.win.native.redist.310.3.0\build\native\bin\x64\v140\Debug\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='Release'">
     <None Include="..\packages\opencv.win.native.redist.310.3.0\build\native\bin\x64\v140\Release\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
