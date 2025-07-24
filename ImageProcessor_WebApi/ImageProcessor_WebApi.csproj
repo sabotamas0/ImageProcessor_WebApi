@@ -20,12 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Wrapper">
-      <HintPath>..\x64\Debug\Wrapper.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="..\packages\opencv.win.native.redist.310.3.0\build\native\bin\x64\v140\Debug\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

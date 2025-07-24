@@ -84,11 +84,11 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sabotamas0\ImageProcessor_WebApi\ImageProcessor_WebApi\packages\opencv.win.native.310.3.0\build\native\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sabotamas0\ImageProcessor_WebApi\packages\opencv.win.native.310.3.0\build\native\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opencv_calib3d310d.lib;opencv_highgui310d.lib;opencv_core310d.lib;opencv_imgproc310d.lib;opencv_imgcodecs310d.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\sabotamas0\ImageProcessor_WebApi\ImageProcessor_WebApi\packages\opencv.win.native.310.3.0\build\native\lib\x64\v140\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\sabotamas0\ImageProcessor_WebApi\packages\opencv.win.native.310.3.0\build\native\lib\x64\v140\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
