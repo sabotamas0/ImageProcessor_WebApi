@@ -11,7 +11,16 @@ This is a Multi layered application which consist of:
 
 ## Prerequisites
 
-### .NET 8 SDK
+### Visual Studio 2022 Community version download
+### .NET 8 SDK download
+### In the Visual Studio Installer:
+
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/projectWorkloads.PNG "Workloads")
+
+### These project types, should by ticked, along with C++/Cli support: 
+
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/cliSupport.PNG "Cli support")
+
 Note: Due of the nature of the C++/Cli module, this solution only works in windows currently.
 
 ## Run the application
