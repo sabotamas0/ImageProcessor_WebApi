@@ -15,7 +15,7 @@ namespace ImageProcessor_Application.Validators
             RuleFor(x => x.Length).NotNull().LessThanOrEqualTo(1024000) // bigger than 1mb
                 .WithMessage("File size is larger than allowed");
 
-            RuleFor(x => x.ContentType).NotNull().Must(x => x.Equals("image/jpeg") || x.Equals("image/png"))
+            RuleFor(x => x.ContentType).NotNull().Must(x => x.Equals("image/jpg") || x.Equals("image/png"))
                 .WithMessage("Unsupported file type. Only image types are allowed.");
         }
     }
