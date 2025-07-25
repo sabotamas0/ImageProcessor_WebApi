@@ -62,7 +62,7 @@ Here's a valid .jpg Request:
 
 Before the Request:
 
-![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/SamplePictures/yellowishBird.PNG "Valid request red bird before")
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/SamplePictures/redBird.jpg "Valid request red bird before")
 
 The program validation denies unsupported file extensions and too large files like so:
 
