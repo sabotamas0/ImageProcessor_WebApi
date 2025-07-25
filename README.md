@@ -54,7 +54,7 @@ The Api currently supports image files, .png and .jpg to be exact. Here's a vali
 
 And this is the before image:
 
-![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/SamplePictures/yellowishBird.PNG" "Valid request yellow bird before")
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/SamplePictures/yellowishBird.PNG "Valid request yellow bird before")
 
 Here's a valid .jpg Request:
 
@@ -62,25 +62,25 @@ Here's a valid .jpg Request:
 
 Before the Request:
 
-![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/SamplePictures/yellowishBird.PNG" "Valid request red bird before")
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/SamplePictures/yellowishBird.PNG "Valid request red bird before")
 
 The program validation denies unsupported file extensions and too large files like so:
 
-![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/invalidRequest.PNG" "Invalid request large and usupported file")
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/invalidRequest.PNG "Invalid request large and usupported file")
 
 Kestrel and FluentValidation ensures this, by defining validation rules:
 
-![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/fluentValidationRuleSet.PNG" "Fluent validation ruleset")
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/fluentValidationRuleSet.PNG "Fluent validation ruleset")
 
 And in the program files, the Kestrel configuration, protects the api from too large files, which otherwise would cause a false CORS exception. The real reason is, that the server can't receive a file with over certain amount of size, instead it return a CORS error.
 
 With Kestrel configured we get the following response:
 
-![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/invalidRequest.PNG" "Invalid request large and usupported file")
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/invalidRequest.PNG "Invalid request large and usupported file")
 
 Here, the file size is 178MB, which without the configuration, would cause the CORS error:
 
-![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/corsError.PNG" "Cors error")
+![alt text](https://github.com/sabotamas0/ImageProcessor_WebApi/raw/main/ImageProcessor_WebApi/assets/corsError.PNG "Cors error")
 
 ## Future development
 	
